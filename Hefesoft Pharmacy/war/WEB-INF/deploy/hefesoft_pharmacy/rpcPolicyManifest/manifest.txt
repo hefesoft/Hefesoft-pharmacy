@@ -1,0 +1,2 @@
+# Module hefesoft_pharmacy
+# RPC service class, partial path of RPC policy file

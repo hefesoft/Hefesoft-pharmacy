@@ -1,0 +1,2 @@
+serviceClass: com.hefesoft.pharmacy.client.GreetingService
+path: D350B38FFD0D10CF8E746218778CCE08.gwt.rpc
