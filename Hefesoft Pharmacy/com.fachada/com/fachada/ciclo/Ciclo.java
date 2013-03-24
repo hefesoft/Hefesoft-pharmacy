@@ -7,6 +7,7 @@ import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 
+import com.fachada.util.DateHelperInt;
 import com.google.appengine.api.datastore.Key;
 
 @PersistenceCapable
@@ -26,7 +27,13 @@ public class Ciclo {
 	private Date FechaInicial;
 	
 	@Persistent
+	private DateHelperInt FechaInicialHelper;
+	
+	@Persistent
 	private Date FechaReunionCiclo;
+	
+	@Persistent
+	private DateHelperInt FechaReunionHelper;
 	
 	@Persistent
 	private int DiasHabiles;
@@ -110,5 +117,21 @@ public class Ciclo {
 
 	public void setPlazoRegistrarPedido(int plazoRegistrarPedido) {
 		PlazoRegistrarPedido = plazoRegistrarPedido;
+	}
+
+	public DateHelperInt getFechaInicialHelper() {
+		return FechaInicialHelper;
+	}
+
+	public void setFechaInicialHelper(DateHelperInt fechaInicialHelper) {
+		FechaInicialHelper = fechaInicialHelper;
+	}
+
+	public DateHelperInt getFechaReunionHelper() {
+		return FechaReunionHelper;
+	}
+
+	public void setFechaReunionHelper(DateHelperInt fechaReunionHelper) {
+		FechaReunionHelper = fechaReunionHelper;
 	}
 }

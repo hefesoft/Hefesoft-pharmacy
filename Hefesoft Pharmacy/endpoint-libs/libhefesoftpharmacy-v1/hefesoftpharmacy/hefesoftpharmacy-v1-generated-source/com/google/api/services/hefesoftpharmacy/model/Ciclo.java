@@ -58,7 +58,19 @@ public final class Ciclo extends GenericJson {
    * The value may be {@code null}.
    */
   @com.google.api.client.util.Key
+  private DateHelperInt fechaInicialHelper;
+
+  /**
+   * The value may be {@code null}.
+   */
+  @com.google.api.client.util.Key
   private DateTime fechaReunionCiclo;
+
+  /**
+   * The value may be {@code null}.
+   */
+  @com.google.api.client.util.Key
+  private DateHelperInt fechaReunionHelper;
 
   /**
    * The value may be {@code null}.
@@ -145,6 +157,23 @@ public final class Ciclo extends GenericJson {
 
    * The value returned may be {@code null}.
    */
+  public DateHelperInt getFechaInicialHelper() {
+    return fechaInicialHelper;
+  }
+
+  /**
+
+   * The value set may be {@code null}.
+   */
+  public Ciclo setFechaInicialHelper(DateHelperInt fechaInicialHelper) {
+    this.fechaInicialHelper = fechaInicialHelper;
+    return this;
+  }
+
+  /**
+
+   * The value returned may be {@code null}.
+   */
   public DateTime getFechaReunionCiclo() {
     return fechaReunionCiclo;
   }
@@ -155,6 +184,23 @@ public final class Ciclo extends GenericJson {
    */
   public Ciclo setFechaReunionCiclo(DateTime fechaReunionCiclo) {
     this.fechaReunionCiclo = fechaReunionCiclo;
+    return this;
+  }
+
+  /**
+
+   * The value returned may be {@code null}.
+   */
+  public DateHelperInt getFechaReunionHelper() {
+    return fechaReunionHelper;
+  }
+
+  /**
+
+   * The value set may be {@code null}.
+   */
+  public Ciclo setFechaReunionHelper(DateHelperInt fechaReunionHelper) {
+    this.fechaReunionHelper = fechaReunionHelper;
     return this;
   }
 
