@@ -61,6 +61,8 @@ public class CrudCiclo {
 	public Ciclo updateCiclo(Ciclo ciclo) {
 		PersistenceManager mgr = getPersistenceManager();
 		try {
+			Ciclo cicloActualizar = mgr.getObjectById(Ciclo.class, ciclo.getId().getId());
+			ciclo.setId(cicloActualizar.getId());
 			mgr.makePersistent(ciclo);
 		} finally {
 			mgr.close();

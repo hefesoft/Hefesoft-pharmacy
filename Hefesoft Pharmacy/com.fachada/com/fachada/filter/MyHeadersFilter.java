@@ -57,10 +57,10 @@ public class MyHeadersFilter implements Filter {
         	httpResponse.addHeader("Access-Control-Allow-Headers", "origin,content-type, accept");
         }
         
-        GetStatusWrapper wrapper;
-        wrapper = new GetStatusWrapper((HttpServletResponse) response);
+//        GetStatusWrapper wrapper;
+//        wrapper = new GetStatusWrapper((HttpServletResponse) response);
 
-       chain.doFilter(request, wrapper);
+       chain.doFilter(request, response);
     }
 
 	@Override

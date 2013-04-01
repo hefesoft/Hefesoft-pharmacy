@@ -68,8 +68,8 @@ public class Hefesoftrest {
 		return usuario.getUsuario(id, dependencias);
 	}
 	
-	@ApiMethod(name = "usuarios.obtenerUsuarioPorEmailContrasenia")
-	public Usuario getUsuarioEmailPassword(@Named("Email") String id, @Named("Password") String password) {
+	@ApiMethod(name = "usuarios.obtenerUsuarioPorEmailContrasenia", httpMethod = HttpMethod.POST)
+	public Usuario obtenerUsuarioEmailPassword(@Named("Email") String id, @Named("Password") String password) {
 		CrudUsuario usuario = new CrudUsuario();
 		return usuario.getUsuarioEmailPassword(id, password);
 	}

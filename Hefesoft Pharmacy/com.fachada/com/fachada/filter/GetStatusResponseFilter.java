@@ -17,6 +17,7 @@ class GetStatusWrapper extends HttpServletResponseWrapper {
         if(sc == 404)
         {
         	int a = sc;
+        	sc = 202;
         }
         
         if(sc == 202)
